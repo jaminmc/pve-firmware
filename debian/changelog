@@ -1,3 +1,9 @@
+pve-firmware (3.16-2) trixie; urgency=medium
+
+  * re-include firmware list for 6.14.4 kernel.
+
+ -- Proxmox Support Team <support@proxmox.com>  Mon, 16 Jun 2025 11:51:32 +0200
+
 pve-firmware (3.16-1) trixie; urgency=medium
 
   * update linux-firmware to 20250613 tag
