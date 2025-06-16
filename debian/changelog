@@ -1,3 +1,9 @@
+pve-firmware (3.16-1) trixie; urgency=medium
+
+  * update linux-firmware to 20250613 tag
+
+ -- Proxmox Support Team <support@proxmox.com>  Mon, 16 Jun 2025 11:22:03 +0200
+
 pve-firmware (3.15-3) bookworm; urgency=medium
 
   * iwlwifi-extra: update list of forced inclusions to cover more hardware
