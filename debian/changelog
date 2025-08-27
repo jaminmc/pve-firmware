@@ -1,3 +1,11 @@
+pve-firmware (3.16-4) trixie; urgency=medium
+
+  * update linux-firmware to 20250808 tag
+
+  * add firmware list for 6.14.11-1-pve kernel.
+
+ -- Proxmox Support Team <support@proxmox.com>  Wed, 27 Aug 2025 15:47:25 +0200
+
 pve-firmware (3.16-3) trixie; urgency=medium
 
   * update linux-firmware to 20250708 tag.
