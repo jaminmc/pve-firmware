@@ -550,6 +550,7 @@ solos-db-FPGA.bin
 symbol_sp24t_prim_fw
 symbol_sp24t_sec_fw
 tehuti/firmware.bin
+tehuti/aqr105-tn40xx.cld
 ti-connectivity/wl18xx-conf.bin
 tms380tr.bin
 usb8388.bin
