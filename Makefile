@@ -30,12 +30,7 @@ sbuild: $(DSC)
 # NOTE: when collapsing FW lists keep major.minor still separated, so we can sunset the older ones
 # without user impact safely. The last oldstable list needs to be kept avoid breakage on upgrade
 .PHONY: fw.list
-fw.list: fwlist-5.15.x.y-pve
 fw.list: fwlist-iwlwifi-extra
-fw.list: fwlist-6.2.2-1-pve
-fw.list: fwlist-6.2.6-1-pve
-fw.list: fwlist-6.2.16-11-pve
-fw.list: fwlist-6.5.3-1-pve
 fw.list: fwlist-6.8.1-1-pve
 fw.list: fwlist-6.8.8-1-pve
 fw.list: fwlist-6.8.12-12-pve
