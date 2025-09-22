@@ -209,6 +209,7 @@ inside-secure/eip197b/ipue.bin
 inside-secure/eip197d/ifpp.bin
 inside-secure/eip197d/ipue.bin
 intel/vpu/vpu_50xx_v0.0.bin
+intel/vpu/vpu_50xx_v1.bin
 isi4608.bin
 isi4616.bin
 isi608.bin
