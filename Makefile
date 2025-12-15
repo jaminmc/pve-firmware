@@ -33,10 +33,7 @@ sbuild: $(DSC)
 fw.list: fwlist-iwlwifi-extra
 fw.list: fwlist-6.8.x-y-pve
 fw.list: fwlist-6.11.11-2-pve
-fw.list: fwlist-6.14.4-1-pve
-fw.list: fwlist-6.14.11-1-pve
-fw.list: fwlist-6.14.11-3-pve
-fw.list: fwlist-6.14.11-5-pve
+fw.list: fwlist-6.14.x-y-pve
 fw.list: fwlist-6.17.0-1-pve
 	rm -f $@.tmp $@
 	sort -u $^ > $@.tmp
