@@ -36,6 +36,7 @@ RTL8192U/main.img
 adf7242_firmware.bin
 amdgpu/aldebaran_cap.bin
 amdgpu/cyan_skillfish_ce.bin
+amdgpu/cyan_skillfish_gpu_info.bin
 amdgpu/cyan_skillfish_me.bin
 amdgpu/cyan_skillfish_mec.bin
 amdgpu/cyan_skillfish_mec2.bin
