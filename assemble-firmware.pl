@@ -46,18 +46,13 @@ amdgpu/cyan_skillfish_sdma.bin
 amdgpu/cyan_skillfish_sdma1.bin
 amdgpu/gc_11_0_0_toc.bin
 amdgpu/gc_11_0_3_mes.bin
-amdgpu/gc_9_5_0_mec.bin
-amdgpu/gc_9_5_0_rlc.bin
 amdgpu/ip_discovery.bin
 amdgpu/navi10_mes.bin
 amdgpu/navi12_cap.bin
-amdgpu/psp_13_0_12_sos.bin
-amdgpu/psp_13_0_12_ta.bin
 amdgpu/sienna_cichlid_cap.bin
 amdgpu/sienna_cichlid_mes.bin
 amdgpu/sienna_cichlid_mes1.bin
 amdgpu/vangogh_gpu_info.bin
-amdgpu/vcn_5_0_1.bin
 amdgpu/vega10_cap.bin
 amdgpu/yellow_carp_gpu_info.bin
 amdnpu/17f0_20/npu.sbin
@@ -209,8 +204,6 @@ inside-secure/eip197b/ifpp.bin
 inside-secure/eip197b/ipue.bin
 inside-secure/eip197d/ifpp.bin
 inside-secure/eip197d/ipue.bin
-intel/vpu/vpu_50xx_v0.0.bin
-intel/vpu/vpu_50xx_v1.bin
 isi4608.bin
 isi4616.bin
 isi608.bin
@@ -426,7 +419,6 @@ iwlwifi-sc-a0-fm-c0-86.ucode
 iwlwifi-sc-a0-fm-c0-92.ucode
 iwlwifi-sc-a0-fm-c0-96.ucode
 iwlwifi-sc-a0-fm-c0.pnvm
-iwlwifi-sc-a0-gf-a0-100.ucode
 iwlwifi-sc-a0-gf-a0-83.ucode
 iwlwifi-sc-a0-gf-a0-86.ucode
 iwlwifi-sc-a0-gf-a0-92.ucode
@@ -491,8 +483,6 @@ iwlwifi-su-z0-43.ucode
 iwlwifi-ty-a0-gf-a0-100.ucode
 iwlwifi-ty-a0-gf-a0-48.ucode
 iwlwifi-ty-a0-gf-a0-50.ucode
-mediatek/mt7996/mt7990_rom_patch.bin
-mediatek/mt7996/mt7990_wm.bin
 iwmc3200wifi-calib-sdio.bin
 iwmc3200wifi-lmac-sdio.bin
 iwmc3200wifi-umac-sdio.bin
@@ -557,7 +547,6 @@ ram.bin
 regulatory.db
 regulatory.db.p7s
 renesas_usb_fw.mem
-rtl_bt/rtl8723b_config.bin
 rtl_bt/rtl8723cs_cg_config.bin
 rtl_bt/rtl8723cs_cg_fw.bin
 rtl_bt/rtl8723cs_vf_config.bin
