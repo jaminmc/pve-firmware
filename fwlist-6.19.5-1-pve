@@ -692,9 +692,11 @@ amdgpu/yellow_carp_ta.bin kernel/drivers/gpu/drm/amd/amdgpu/amdgpu.ko
 amdgpu/yellow_carp_toc.bin kernel/drivers/gpu/drm/amd/amdgpu/amdgpu.ko
 amdgpu/yellow_carp_vcn.bin kernel/drivers/gpu/drm/amd/amdgpu/amdgpu.ko
 amdnpu/1502_00/npu.sbin kernel/drivers/accel/amdxdna/amdxdna.ko
+amdnpu/1502_00/npu_7.sbin kernel/drivers/accel/amdxdna/amdxdna.ko
 amdnpu/17f0_10/npu.sbin kernel/drivers/accel/amdxdna/amdxdna.ko
+amdnpu/17f0_10/npu_7.sbin kernel/drivers/accel/amdxdna/amdxdna.ko
 amdnpu/17f0_11/npu.sbin kernel/drivers/accel/amdxdna/amdxdna.ko
-amdnpu/17f0_20/npu.sbin kernel/drivers/accel/amdxdna/amdxdna.ko
+amdnpu/17f0_11/npu_7.sbin kernel/drivers/accel/amdxdna/amdxdna.ko
 ar5523.bin kernel/drivers/net/wireless/ath/ar5523/ar5523.ko
 asihpi/dsp5000.bin kernel/sound/pci/asihpi/snd-asihpi.ko
 asihpi/dsp6200.bin kernel/sound/pci/asihpi/snd-asihpi.ko

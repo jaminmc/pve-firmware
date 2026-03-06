@@ -1,3 +1,13 @@
+pve-firmware (3.19-3-jaminmc) trixie; urgency=medium
+
+  * amdnpu: create npu_7.sbin symlinks during build for amdxdna protocol 7
+    firmware support, fixing AMD NPU probe failure on Hawk Point / Strix /
+    Strix Halo hardware (e.g. Ryzen AI HX 370) with updated firmware blobs.
+
+  * update firmware list for 6.19.5-1-pve kernel
+
+ -- JaminMc <1310376+jaminmc@users.noreply.github.com>  Fri, 06 Mar 2026 12:30:00 -0500
+
 pve-firmware (3.19-2-jaminmc) trixie; urgency=medium
 
   * update linux-firmware to 20260221 tag

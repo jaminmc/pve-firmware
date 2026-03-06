@@ -36,7 +36,7 @@ fw.list: fwlist-6.11.11-2-pve
 fw.list: fwlist-6.14.x-y-pve
 fw.list: fwlist-6.17.13-1-pve
 fw.list: fwlist-6.18.x-y-pve
-fw.list: fwlist-6.19.0-1-pve
+fw.list: fwlist-6.19.5-1-pve
 	rm -f $@.tmp $@
 	sort -u $^ > $@.tmp
 	mv $@.tmp $@
@@ -50,6 +50,12 @@ $(BUILDDIR): linux-firmware.git/WHENCE dvb-firmware.git/README fw.list
 	cp -a debian $@.tmp
 	echo "git clone git://git.proxmox.com/git/pve-firmware.git\\ngit checkout $$(git rev-parse HEAD)" >$@.tmp/debian/SOURCE
 	cd linux-firmware.git; ./copy-firmware.sh -v ../$@.tmp/lib/firmware/
+	# amdxdna protocol 7 firmware: create npu_7.sbin symlinks alongside npu.sbin
+	# so the updated driver can find the protocol-7 firmware (see pve-kernel issue #1)
+	for dir in 1502_00 17f0_10 17f0_11; do \
+		target=$$(readlink $@.tmp/lib/firmware/amdnpu/$$dir/npu.sbin); \
+		ln -sf $$target $@.tmp/lib/firmware/amdnpu/$$dir/npu_7.sbin; \
+	done
 	./assemble-firmware.pl fw.list $@.tmp/lib/firmware
 	find $@.tmp/lib/firmware -empty -type d -delete
 	install -d $@.tmp/usr/share/doc/pve-firmware
