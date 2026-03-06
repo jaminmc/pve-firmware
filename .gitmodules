@@ -1,6 +1,6 @@
 [submodule "linux-firmware.git"]
 	path = linux-firmware.git
-	url = git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
+	url = https://gitlab.com/kernel-firmware/linux-firmware.git
 [submodule "dvb-firmware.git"]
 	path = dvb-firmware.git
 	url = git://git.proxmox.com/git/mirror_dvb-firmware.git
