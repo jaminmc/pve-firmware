@@ -50,11 +50,24 @@ $(BUILDDIR): linux-firmware.git/WHENCE dvb-firmware.git/README fw.list
 	cp -a debian $@.tmp
 	echo "git clone git://git.proxmox.com/git/pve-firmware.git\\ngit checkout $$(git rev-parse HEAD)" >$@.tmp/debian/SOURCE
 	cd linux-firmware.git; ./copy-firmware.sh -v ../$@.tmp/lib/firmware/
-	# amdxdna protocol 7 firmware: create npu_7.sbin symlinks alongside npu.sbin
-	# so the updated driver can find the protocol-7 firmware (see pve-kernel issue #1)
-	for dir in 1502_00 17f0_10 17f0_11; do \
-		target=$$(readlink $@.tmp/lib/firmware/amdnpu/$$dir/npu.sbin); \
-		ln -sf $$target $@.tmp/lib/firmware/amdnpu/$$dir/npu_7.sbin; \
+	# amdxdna firmware: the current linux-firmware ships protocol-7 blobs as npu.sbin,
+	# but the 6.19.x driver still expects protocol 6. Install the old protocol-6 blobs
+	# as npu.sbin (fallback) and keep the new protocol-7 blobs as npu_7.sbin.
+	# npu_7.sbin will be used once the driver gains protocol-7 support (f1eac46fe5f7).
+	# See: https://github.com/jaminmc/pve-kernel/issues/1
+	install -m 644 firmware-misc/amdnpu_1502_00_npu.sbin.1.5.2.380 \
+		$@.tmp/lib/firmware/amdnpu/1502_00/npu.sbin.1.5.2.380
+	install -m 644 firmware-misc/amdnpu_17f0_10_npu.sbin.1.0.0.63 \
+		$@.tmp/lib/firmware/amdnpu/17f0_10/npu.sbin.1.0.0.63
+	install -m 644 firmware-misc/amdnpu_17f0_11_npu.sbin.1.0.0.166 \
+		$@.tmp/lib/firmware/amdnpu/17f0_11/npu.sbin.1.0.0.166
+	for dir_blob in \
+		"1502_00 npu.sbin.1.5.5.391 npu.sbin.1.5.2.380" \
+		"17f0_10 npu.sbin.1.1.2.64  npu.sbin.1.0.0.63" \
+		"17f0_11 npu.sbin.1.1.2.65  npu.sbin.1.0.0.166"; do \
+		set -- $$dir_blob; dir=$$1; new=$$2; old=$$3; \
+		ln -sf $$new $@.tmp/lib/firmware/amdnpu/$$dir/npu_7.sbin; \
+		ln -sfn $$old $@.tmp/lib/firmware/amdnpu/$$dir/npu.sbin; \
 	done
 	./assemble-firmware.pl fw.list $@.tmp/lib/firmware
 	find $@.tmp/lib/firmware -empty -type d -delete

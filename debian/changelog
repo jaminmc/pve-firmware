@@ -1,3 +1,14 @@
+pve-firmware (3.19-4-jaminmc) trixie; urgency=medium
+
+  * amdnpu: fix AMD NPU probe failure (protocol mismatch) on Hawk Point /
+    Strix / Strix Halo hardware (e.g. Ryzen AI HX 370). The 6.19.x driver
+    expects protocol 6, but new linux-firmware blobs report protocol 7.
+    Restore npu.sbin to the old protocol-6 firmware as fallback, and add
+    npu_7.sbin pointing to the new protocol-7 blobs for when the driver
+    gains full protocol-7 support (pending commit f1eac46fe5f7).
+
+ -- JaminMc <1310376+jaminmc@users.noreply.github.com>  Fri, 06 Mar 2026 18:45:00 -0500
+
 pve-firmware (3.19-3-jaminmc) trixie; urgency=medium
 
   * amdnpu: create npu_7.sbin symlinks during build for amdxdna protocol 7
