@@ -56,6 +56,7 @@ amdgpu/vangogh_gpu_info.bin
 amdgpu/vega10_cap.bin
 amdgpu/yellow_carp_gpu_info.bin
 amdnpu/17f0_20/npu.sbin
+apple/dfrmtfw-*.bin
 ar9170.fw
 ast_dp501_fw.bin
 ath10k/QCA6174/hw2.1/firmware-4.bin
@@ -527,6 +528,11 @@ mwl8k/helper_8363.fw
 ni6534a.bin
 niscrb01.bin
 niscrb02.bin
+nvidia/gm20b/gr/sw_method_init.bin
+nvidia/tegra186/nvdec.bin
+nvidia/tegra194/nvdec.bin
+nvidia/tegra210/nvdec.bin
+nvidia/tegra234/vic.bin
 nx3fwct.bin
 nx3fwmn.bin
 nxromimg.bin
@@ -539,6 +545,7 @@ prism_ap_fw.bin
 prism_sta_fw.bin
 qat_6xxx.bin
 qat_6xxx_mmp.bin
+r8a779f0_ufs.bin
 ql2600_fw.bin
 ql2700_fw.bin
 ql8100_fw.bin
