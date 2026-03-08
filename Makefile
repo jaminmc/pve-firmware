@@ -74,7 +74,7 @@ submodule dvb-firmware.git/README linux-firmware.git/WHENCE:
 .PHONY: upload
 upload: UPLOAD_DIST ?= $(DEB_DISTRIBUTION)
 upload: $(DEBS)
-	tar cf - $(DEBS) | ssh repoman@repo.proxmox.com -- upload --product pve,pmg,pbs,pdm --dist $(UPLOAD_DIST)
+	tar cf - $(DEBS) | ssh repoman@repo.proxmox.com -- upload --product pve,pmg,pbs,pdm --dist $(UPLOAD_DIST) --arch amd64,arm64
 
 .PHONY: clean
 clean:
