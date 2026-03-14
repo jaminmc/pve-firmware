@@ -33,13 +33,33 @@ amdgpu/aldebaran_cap.bin
 amdgpu/cyan_skillfish_gpu_info.bin
 amdgpu/gc_11_0_0_toc.bin
 amdgpu/gc_11_0_3_mes.bin
+amdgpu/gc_11_5_4_imu.bin
+amdgpu/gc_11_5_4_me.bin
+amdgpu/gc_11_5_4_mec.bin
+amdgpu/gc_11_5_4_mes1.bin
+amdgpu/gc_11_5_4_mes_2.bin
+amdgpu/gc_11_5_4_pfp.bin
+amdgpu/gc_11_5_4_rlc.bin
+amdgpu/gc_12_1_0_imu.bin
+amdgpu/gc_12_1_0_mec.bin
+amdgpu/gc_12_1_0_mes1.bin
+amdgpu/gc_12_1_0_mes.bin
+amdgpu/gc_12_1_0_rlc.bin
+amdgpu/gc_12_1_0_uni_mes.bin
 amdgpu/ip_discovery.bin
 amdgpu/navi10_mes.bin
 amdgpu/navi12_cap.bin
+amdgpu/psp_13_0_15_sos.bin
+amdgpu/psp_13_0_15_ta.bin
+amdgpu/psp_15_0_0_toc.bin
+amdgpu/psp_15_0_8_toc.bin
+amdgpu/sdma_6_1_4.bin
+amdgpu/sdma_7_1_0.bin
 amdgpu/sienna_cichlid_cap.bin
 amdgpu/sienna_cichlid_mes1.bin
 amdgpu/sienna_cichlid_mes.bin
 amdgpu/vega10_cap.bin
+amdgpu/vcn_5_3_0.bin
 amdnpu/17f0_20/npu.sbin
 ast_dp501_fw.bin
 ath10k/QCA6174/hw2.1/firmware-4.bin
@@ -173,6 +193,9 @@ iwlwifi-bz-a0-fm-c0-92.ucode
 iwlwifi-bz-a0-fm-c0-96.ucode
 iwlwifi-bz-a0-fm-c0-c101.ucode
 iwlwifi-bz-a0-fm-c0-c99.ucode
+iwlwifi-bz-a0-fm4-b0-cIWL_BZ_UCODE_CORE_MAX.ucode
+iwlwifi-bz-a0-fm-b0-cIWL_BZ_UCODE_CORE_MAX.ucode
+iwlwifi-bz-a0-fm-c0-cIWL_BZ_UCODE_CORE_MAX.ucode
 iwlwifi-bz-a0-fm-c0.pnvm
 iwlwifi-bz-a0-gf4-a0-100.ucode
 iwlwifi-bz-a0-gf4-a0-86.ucode
@@ -198,8 +221,10 @@ iwlwifi-gl-b0-fm-b0-92.ucode
 iwlwifi-gl-b0-fm-b0-96.ucode
 iwlwifi-gl-b0-fm-b0-c101.ucode
 iwlwifi-gl-b0-fm-b0-c99.ucode
+iwlwifi-gl-b0-fm-b0-cIWL_BZ_UCODE_CORE_MAX.ucode
 iwlwifi-gl-b0-fm-b0.pnvm
 iwlwifi-gl-c0-fm-c0-102.ucode
+iwlwifi-gl-c0-fm-c0-cIWL_BZ_UCODE_CORE_MAX.ucode
 iwlwifi-gl-c0-fm-c0-c99.ucode
 iwlwifi-ma-a0-gf4-a0-100.ucode
 iwlwifi-ma-a0-gf4-a0-86.ucode
@@ -355,6 +380,7 @@ wil6210_sparrow_plus.fw
 wil6436.brd
 wil6436.fw
 wlan/prima/WCNSS_qcom_wlan_nv.bin
+xe/nvl_guc_70.55.4.bin
 )) {
     $ALLOW_MISSING->{$fw} = 1;
 }
