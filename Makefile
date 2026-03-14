@@ -37,6 +37,7 @@ fw.list: fwlist-6.14.x-y-pve
 fw.list: fwlist-6.17.13-1-pve
 fw.list: fwlist-6.18.x-y-pve
 fw.list: fwlist-6.19.0-1-pve
+fw.list: fwlist-7.0.0-1-pve
 	rm -f $@.tmp $@
 	sort -u $^ > $@.tmp
 	mv $@.tmp $@
