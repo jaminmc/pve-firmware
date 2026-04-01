@@ -1,3 +1,11 @@
+pve-firmware (3.18-3) trixie; urgency=medium
+
+  * update linux-firmware to 20260410 tag.
+
+  * add fwlist-7.0.0-1-rc3-pve-amd64.
+
+ -- Proxmox Support Team <support@proxmox.com>  Mon, 13 Apr 2026 15:57:59 +0200
+
 pve-firmware (3.18-2) trixie; urgency=medium
 
   * update linux-firmware to current master on top of 20260221 tag.
