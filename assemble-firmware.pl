@@ -580,6 +580,7 @@ ql2600_fw.bin
 ql2700_fw.bin
 ql8100_fw.bin
 ql8300_fw.bin
+qt2025-2.0.3.3.fw
 r8a779f0_ufs.bin
 ram.bin
 regulatory.db
