@@ -26,11 +26,8 @@ intel/ibt-0180-1050.ddc kernel/drivers/bluetooth/btintel.ko
 intel/ibt-0180-1050.sfi kernel/drivers/bluetooth/btintel.ko
 intel/ibt-0180-4150.ddc kernel/drivers/bluetooth/btintel.ko
 intel/ibt-0180-4150.sfi kernel/drivers/bluetooth/btintel.ko
-intel/ibt-0190-0041.ddc kernel/drivers/bluetooth/btintel.ko
-intel/ibt-0190-0041-iml.sfi kernel/drivers/bluetooth/btintel.ko
-intel/ibt-0190-0041.sfi kernel/drivers/bluetooth/btintel.ko
-intel/ibt-0190-0291.ddc kernel/drivers/bluetooth/btintel.ko
 intel/ibt-0190-0291-iml.sfi kernel/drivers/bluetooth/btintel.ko
+intel/ibt-0190-0291.ddc kernel/drivers/bluetooth/btintel.ko
 intel/ibt-0190-0291.sfi kernel/drivers/bluetooth/btintel.ko
 intel/ibt-0291-0291.ddc kernel/drivers/bluetooth/btintel.ko
 intel/ibt-0291-0291.sfi kernel/drivers/bluetooth/btintel.ko
@@ -46,6 +43,11 @@ intel/ibt-1040-4150.ddc kernel/drivers/bluetooth/btintel.ko
 intel/ibt-1040-4150.sfi kernel/drivers/bluetooth/btintel.ko
 intel/ibt-11-5.ddc kernel/drivers/bluetooth/btintel.ko
 intel/ibt-11-5.sfi kernel/drivers/bluetooth/btintel.ko
+intel/ibt-1190-0041-iml.sfi kernel/drivers/bluetooth/btintel.ko
+intel/ibt-1190-0041-pci.ddc kernel/drivers/bluetooth/btintel.ko
+intel/ibt-1190-0041-pci.sfi kernel/drivers/bluetooth/btintel.ko
+intel/ibt-1190-0041-usb.ddc kernel/drivers/bluetooth/btintel.ko
+intel/ibt-1190-0041-usb.sfi kernel/drivers/bluetooth/btintel.ko
 intel/ibt-12-16.ddc kernel/drivers/bluetooth/btintel.ko
 intel/ibt-12-16.sfi kernel/drivers/bluetooth/btintel.ko
 intel/ibt-17-0-1.ddc kernel/drivers/bluetooth/btintel.ko
