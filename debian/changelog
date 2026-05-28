@@ -1,3 +1,9 @@
+pve-firmware (3.18-4) trixie; urgency=medium
+
+  * update linux-firmware to 20260519 tag.
+
+ -- Proxmox Support Team <support@proxmox.com>  Thu, 28 May 2026 22:35:02 +0200
+
 pve-firmware (3.18-3) trixie; urgency=medium
 
   * update linux-firmware to 20260410 tag.
