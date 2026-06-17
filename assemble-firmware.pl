@@ -44,6 +44,7 @@ amdgpu/cyan_skillfish_pfp.bin
 amdgpu/cyan_skillfish_rlc.bin
 amdgpu/cyan_skillfish_sdma.bin
 amdgpu/cyan_skillfish_sdma1.bin
+amdgpu/dcn_4_2_dmcub.bin
 amdgpu/gc_11_0_0_toc.bin
 amdgpu/gc_11_0_3_mes.bin
 amdgpu/gc_11_5_4_imu.bin
@@ -64,6 +65,7 @@ amdgpu/navi10_mes.bin
 amdgpu/navi12_cap.bin
 amdgpu/psp_13_0_15_sos.bin
 amdgpu/psp_13_0_15_ta.bin
+amdgpu/psp_15_0_0_ta.bin
 amdgpu/psp_15_0_0_toc.bin
 amdgpu/psp_15_0_8_toc.bin
 amdgpu/sdma_6_1_4.bin
@@ -72,6 +74,7 @@ amdgpu/sienna_cichlid_cap.bin
 amdgpu/sienna_cichlid_mes.bin
 amdgpu/sienna_cichlid_mes1.bin
 amdgpu/vangogh_gpu_info.bin
+amdgpu/vcn_5_0_2.bin
 amdgpu/vcn_5_3_0.bin
 amdgpu/vega10_cap.bin
 amdgpu/yellow_carp_gpu_info.bin
@@ -385,6 +388,7 @@ iwlwifi-bz-a0-mr-a0-72.ucode
 iwlwifi-dr-a0-pe-a0-102.ucode
 iwlwifi-dr-a0-pe-a0-96.ucode
 iwlwifi-dr-a0-pe-a0-c101.ucode
+iwlwifi-dr-a0-pe-a0-c102.ucode
 iwlwifi-gl-a0-fm-a0-72.ucode
 iwlwifi-gl-b0-fm-b0-102.ucode
 iwlwifi-gl-b0-fm-b0-72.ucode
@@ -441,6 +445,7 @@ iwlwifi-sc-a0-fm-b0-86.ucode
 iwlwifi-sc-a0-fm-b0-92.ucode
 iwlwifi-sc-a0-fm-b0-96.ucode
 iwlwifi-sc-a0-fm-b0-c101.ucode
+iwlwifi-sc-a0-fm-b0-c102.ucode
 iwlwifi-sc-a0-fm-b0.pnvm
 iwlwifi-sc-a0-fm-c0-102.ucode
 iwlwifi-sc-a0-fm-c0-83.ucode
@@ -470,18 +475,21 @@ iwlwifi-sc-a0-wh-a0-86.ucode
 iwlwifi-sc-a0-wh-a0-92.ucode
 iwlwifi-sc-a0-wh-a0-96.ucode
 iwlwifi-sc-a0-wh-a0-c101.ucode
+iwlwifi-sc-a0-wh-a0-c102.ucode
 iwlwifi-sc-a0-wh-a0.pnvm
 iwlwifi-sc2-a0-fm-c0-102.ucode
 iwlwifi-sc2-a0-fm-c0-86.ucode
 iwlwifi-sc2-a0-fm-c0-92.ucode
 iwlwifi-sc2-a0-fm-c0-96.ucode
 iwlwifi-sc2-a0-fm-c0-c101.ucode
+iwlwifi-sc2-a0-fm-c0-c102.ucode
 iwlwifi-sc2-a0-fm-c0.pnvm
 iwlwifi-sc2-a0-wh-a0-102.ucode
 iwlwifi-sc2-a0-wh-a0-86.ucode
 iwlwifi-sc2-a0-wh-a0-92.ucode
 iwlwifi-sc2-a0-wh-a0-96.ucode
 iwlwifi-sc2-a0-wh-a0-c101.ucode
+iwlwifi-sc2-a0-wh-a0-c102.ucode
 iwlwifi-sc2-a0-wh-a0.pnvm
 iwlwifi-sc2f-a0-fm-c0-86.ucode
 iwlwifi-sc2f-a0-fm-c0-92.ucode

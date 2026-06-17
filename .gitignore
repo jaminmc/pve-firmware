@@ -1,6 +1,9 @@
 *.deb
+*.build
 *.buildinfo
 *.changes
+*.dsc
+/pve-firmware*.tar*
 /fw.list
 /fwdata
 /fwdata.tmp
