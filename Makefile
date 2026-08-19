@@ -38,6 +38,7 @@ fw.list: fwlist-6.17.13-1-pve
 fw.list: fwlist-6.17.13-1-pve-arm64
 fw.list: fwlist-7.0.0-1-rc3-pve-amd64
 fw.list: fwlist-7.1.0-1-pve-amd64
+fw.list: fwlist-7.2.0-1-pve-amd64
 	rm -f $@.tmp $@
 	sort -u $^ > $@.tmp
 	mv $@.tmp $@
@@ -56,7 +57,12 @@ $(BUILDDIR): linux-firmware.git/WHENCE dvb-firmware.git/README fw.list
 	install -d $@.tmp/usr/share/doc/pve-firmware
 	cp linux-firmware.git/WHENCE $@.tmp/usr/share/doc/pve-firmware/README
 	install -d $@.tmp/usr/share/doc/pve-firmware/licenses
-	cp linux-firmware.git/LICEN[CS]E* $@.tmp/usr/share/doc/pve-firmware/licenses
+	# linux-firmware now keeps most texts under LICENSES/; also copy any top-level files
+	find linux-firmware.git -maxdepth 1 -type f \( -name 'LICENCE*' -o -name 'LICENSE*' \) \
+		-exec cp {} $@.tmp/usr/share/doc/pve-firmware/licenses/ \;
+	if [ -d linux-firmware.git/LICENSES ]; then \
+		cp linux-firmware.git/LICENSES/* $@.tmp/usr/share/doc/pve-firmware/licenses/; \
+	fi
 	# we only compress big ones that almost definitively ain't required in the initrd
 	# or are so big and unbuyable (netronome...)
 	cd $@.tmp/lib/firmware; find . -type f \( -name 'i[wb][lt]*' -o -path '*/netronome/*' \) -print0 | xargs -0 -n1 -P0 -- xz -C crc32
